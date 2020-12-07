@@ -51,3 +51,13 @@ ORDER BY
 	e.emp_no ASC,
 	ti.to_date DESC
 ;
+
+-- Deliverable 3
+SELECT * FROM mentorship_eligibility
+SELECT COUNT(emp_no) FROM mentorship_eligibility
+SELECT SUM(count) FROM retiring_titles
+
+SELECT COUNT (title), title 
+FROM mentorship_eligibility
+GROUP BY title
+ORDER BY COUNT(title) DESC;
